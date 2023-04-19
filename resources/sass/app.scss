@@ -1,0 +1,26 @@
+// Fonts
+@import url('https://fonts.bunny.net/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+#topWrapper{
+    height: 75vh;
+    background-image: url("/public/background/brooke-lark-M4E7X3z80PQ-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+nav{
+    background-color: #0009;
+}
+#welcomeMsg{
+    color: #fff;
+    margin-top: 15vh;
+    background-color: #0009;
+}
+
