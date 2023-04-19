@@ -58,11 +58,101 @@
             </div>
         </div>
     </section>
+    <section class="container my-4">
+        <div class="row my-3">
+            <div class="col-md-3">
+                <div class="card shadow-lg">
+                    <img src="/items/ikhsan-baihaqi-dXeBXaThv4U-unsplash.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Noodles</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                        <a href="" class="btn btn-primary px-2 btn-sm">Preview</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card shadow-lg">
+                    <img src="/items/mae-mu-kbch-i63YTg-unsplash.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Noodles</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                        <a href="#itemOffCanvas" class="btn btn-primary px-2 btn-sm">Preview</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card shadow-lg">
+                    <img src="/items/anto-meneghini-IrohWzafmmA-unsplash.jpg" class="card-img-top" >
+                    <div class="card-body">
+                        <h5 class="card-title">Noodles</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                        <a href="#itemOffCanvas" class="btn btn-primary px-2 btn-sm">Preview</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card shadow-lg">
+                    <img src="/items/ikhsan-baihaqi-RwAXb8Hv_sU-unsplash.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Noodles</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                        <a href="#itemOffCanvas" class="btn btn-primary px-2 btn-sm">Preview</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row my-3">
+            <div class="col-md-3">
+                <div class="card shadow-lg">
+                    <img src="/items/chad-montano-MqT0asuoIcU-unsplash.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Noodles</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                        <a href="#itemOffCanvas" class="btn btn-primary px-2 btn-sm">Preview</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card shadow-lg">
+                    <img src="/items/davey-gravy-4WPcz_5RVMk-unsplash.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Noodles</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                        <a href="" class="btn btn-primary px-2 btn-sm">Preview</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card shadow-lg">
+                    <img src="/items/anto-meneghini-IrohWzafmmA-unsplash.jpg" class="card-img-top" >
+                    <div class="card-body">
+                        <h5 class="card-title">Noodles</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                        <a href="#itemOffCanvas" class="btn btn-primary px-2 btn-sm">Preview</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card shadow-lg">
+                    <img src="/items/ella-olsson-lMcRyBx4G50-unsplash.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Noodles</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                        <a href="#itemOffCanvas" class="btn btn-primary px-2 btn-sm">Preview</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+
+    </section>
 
 </main>
 
 
+<footer class="container-fluid p-3">
+    &copy;KPODJI EMMANUEL -- 2023
+</footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
         integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
