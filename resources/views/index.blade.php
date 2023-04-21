@@ -27,12 +27,7 @@
                         <li class="nav-item">
                             <a class="nav-link text-white" href="#">About Us</a>
                         </li>
-                        <li class="nav-item text-white mx-2">
-                            <a href="" class="nav-link">Login</a>
-                        </li>
                     </ul>
-
-                </div>
                 <div>
                     <ul class="navbar-nav">
                         <li class="nav-item  mx-2">
@@ -46,7 +41,9 @@
                         </li>
                     </ul>
                 </div>
-            </div>
+            </di
+                </div>
+               v>
         </nav>
         <div class="container-fluid row  ">
             <div class="col-md-6 offset-md-3 p-3 text-center" id="welcomeMsg">
@@ -54,11 +51,11 @@
                 <h4 class="text-center">Welcome to the land where food chases away hunger!!</h4>
                 <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem error ea necessitatibus nam atque dolore adipisci
                     oluptates consectetur reprehenderit odit iste deserunt sunt rem ut, perferendis cum rerum voluptatum unde.</p>
-                <p><a href="" class="btn btn-success text-white px-2"> Eat Something </a> </p>
+                <p><a href="#foodItems" class="btn btn-success text-white px-2"> Eat Something </a> </p>
             </div>
         </div>
     </section>
-    <section class="container my-4">
+    <section class="container my-4" id="foodItems">
         <div class="row my-3">
             <div class="col-md-3">
                 <div class="card shadow-lg">
@@ -66,7 +63,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Noodles</h5>
                         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                        <a href="" class="btn btn-primary px-2 btn-sm">Preview</a>
+                        <a href="#itemCanvas" class="btn btn-primary px-2 btn-sm" data-bs-toggle="offcanvas">Preview</a>
                     </div>
                 </div>
             </div>
@@ -76,7 +73,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Noodles</h5>
                         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                        <a href="#itemOffCanvas" class="btn btn-primary px-2 btn-sm">Preview</a>
+                        <a href="#itemCanvas" class="btn btn-primary px-2 btn-sm" data-bs-toggle="offcanvas">Preview</a>
                     </div>
                 </div>
             </div>
@@ -86,7 +83,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Noodles</h5>
                         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                        <a href="#itemOffCanvas" class="btn btn-primary px-2 btn-sm">Preview</a>
+                        <a href="#itemCanvas" class="btn btn-primary px-2 btn-sm" data-bs-toggle="offcanvas">Preview</a>
                     </div>
                 </div>
             </div>
@@ -96,7 +93,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Noodles</h5>
                         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                        <a href="#itemOffCanvas" class="btn btn-primary px-2 btn-sm">Preview</a>
+                        <a href="#itemCanvas" class="btn btn-primary px-2 btn-sm" data-bs-toggle="offcanvas">Preview</a>
                     </div>
                 </div>
             </div>
@@ -108,7 +105,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Noodles</h5>
                         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                        <a href="#itemOffCanvas" class="btn btn-primary px-2 btn-sm">Preview</a>
+                        <a href="#itemCanvas" class="btn btn-primary px-2 btn-sm" data-bs-toggle="offcanvas">Preview</a>
                     </div>
                 </div>
             </div>
@@ -118,7 +115,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Noodles</h5>
                         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                        <a href="" class="btn btn-primary px-2 btn-sm">Preview</a>
+                        <a href="#itemCanvas" class="btn btn-primary px-2 btn-sm" data-bs-toggle="offcanvas">Preview</a>
                     </div>
                 </div>
             </div>
@@ -128,7 +125,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Noodles</h5>
                         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                        <a href="#itemOffCanvas" class="btn btn-primary px-2 btn-sm">Preview</a>
+                        <a href="#itemCanvas" class="btn btn-primary px-2 btn-sm" data-bs-toggle="offcanvas">Preview</a>
                     </div>
                 </div>
             </div>
@@ -138,21 +135,63 @@
                     <div class="card-body">
                         <h5 class="card-title">Noodles</h5>
                         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                        <a href="#itemOffCanvas" class="btn btn-primary px-2 btn-sm">Preview</a>
+                        <a href="#itemCanvas" class="btn btn-primary px-2 btn-sm" data-bs-toggle="offcanvas">Preview</a>
                     </div>
                 </div>
             </div>
         </div>
-
-
     </section>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="itemCanvas">
+        <div class="offcanvas-header">
+            <h4  class="offcanvas-title">Product</h4>
+            <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+        <div class="row">
+            <div class="col">
+                <div class="card shadow-lg">
+                    <img src="/items/ikhsan-baihaqi-RwAXb8Hv_sU-unsplash.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Noodles</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                        <div class="">
+                            <form action="">
+                                <div class="row">
+                                    <div class="col-md-6 my-2">
+                                        <div class="input-group">
+                                            <button class="btn btn-primary input-group-prepend" type="button">-</button>
+                                            <input type="number" class="form-control px-3" id="product-qty" min="1">
+                                            <button class="btn btn-primary input-group-append" type="button">+</button> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="submit" value="Order Now" class="btn btn-success px-3 text-center" style="float:right;">
+                                </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+
+    </div>
 
 </main>
 
 
-<footer class="container-fluid p-3">
-    &copy;KPODJI EMMANUEL -- 2023
-</footer>
+<div class="container-fluid text-white bg-dark">
+        <footer > 
+            <div class="row py-2">
+                <div class="col-lg-12">
+                    <p class="text-center text-white">&copy;2023 QuicQFoods --  <span>Created by: Kpodji Emmanuel</span></p>
+                </div>
+            </div>       
+        </footer>
+       
+
+      </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
         integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
