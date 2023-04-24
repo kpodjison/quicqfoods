@@ -1,6 +1,7 @@
 @extends('_header')
 @section('content')
     <section class="container my-4" id="foodItems">
+        
         <div class="row my-3">
             <div class="col-md-3">
                 <div class="card shadow-lg">
@@ -122,4 +123,5 @@
 
 
     </div>
+    {{ $products}}
 @endsection
