@@ -1,91 +1,27 @@
 @extends('_header')
 @section('content')
     <section class="container my-4" id="foodItems">
-        
+        @foreach ($products as $product )
         <div class="row my-3">
-            <div class="col-md-3">
-                <div class="card shadow-lg">
-                    <img src="/items/ikhsan-baihaqi-dXeBXaThv4U-unsplash.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">Noodles</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                        <a href="#itemCanvas" class="btn btn-primary px-2 btn-sm" data-bs-toggle="offcanvas">Preview</a>
+            @foreach ($product as $item)
+                <div class="col-md-3">
+                    <div class="card shadow-lg">
+                        <img src="/items/ikhsan-baihaqi-dXeBXaThv4U-unsplash.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="card-title">{{$item['name'] }}</h5>
+                                <p>$ {{$item['price'] }}</p>
+                            </div>
+                            <p class="card-text">{{$item['description'] }}</p>
+                            <a href="#itemCanvas" class="btn btn-primary px-2 btn-sm" data-bs-toggle="offcanvas">Preview</a>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card shadow-lg">
-                    <img src="/items/mae-mu-kbch-i63YTg-unsplash.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">Noodles</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                        <a href="#itemCanvas" class="btn btn-primary px-2 btn-sm" data-bs-toggle="offcanvas">Preview</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card shadow-lg">
-                    <img src="/items/anto-meneghini-IrohWzafmmA-unsplash.jpg" class="card-img-top" >
-                    <div class="card-body">
-                        <h5 class="card-title">Noodles</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                        <a href="#itemCanvas" class="btn btn-primary px-2 btn-sm" data-bs-toggle="offcanvas">Preview</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card shadow-lg">
-                    <img src="/items/ikhsan-baihaqi-RwAXb8Hv_sU-unsplash.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">Noodles</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                        <a href="#itemCanvas" class="btn btn-primary px-2 btn-sm" data-bs-toggle="offcanvas">Preview</a>
-                    </div>
-                </div>
-            </div>
+                </div>  
+            @endforeach
+          
         </div>
-        <div class="row my-3">
-            <div class="col-md-3">
-                <div class="card shadow-lg">
-                    <img src="/items/chad-montano-MqT0asuoIcU-unsplash.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">Noodles</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                        <a href="#itemCanvas" class="btn btn-primary px-2 btn-sm" data-bs-toggle="offcanvas">Preview</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card shadow-lg">
-                    <img src="/items/davey-gravy-4WPcz_5RVMk-unsplash.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">Noodles</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                        <a href="#itemCanvas" class="btn btn-primary px-2 btn-sm" data-bs-toggle="offcanvas">Preview</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card shadow-lg">
-                    <img src="/items/anto-meneghini-IrohWzafmmA-unsplash.jpg" class="card-img-top" >
-                    <div class="card-body">
-                        <h5 class="card-title">Noodles</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                        <a href="#itemCanvas" class="btn btn-primary px-2 btn-sm" data-bs-toggle="offcanvas">Preview</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card shadow-lg">
-                    <img src="/items/ella-olsson-lMcRyBx4G50-unsplash.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">Noodles</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                        <a href="#itemCanvas" class="btn btn-primary px-2 btn-sm" data-bs-toggle="offcanvas">Preview</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        @endforeach
+
     </section>
     <div class="offcanvas offcanvas-end" tabindex="-1" id="itemCanvas">
         <div class="offcanvas-header">
@@ -98,8 +34,12 @@
                 <div class="card shadow-lg">
                     <img src="/items/ikhsan-baihaqi-RwAXb8Hv_sU-unsplash.jpg" class="card-img-top">
                     <div class="card-body">
-                        <h5 class="card-title">Noodles</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                            <div class="d-flex justify-content-between">
+                                <h5 class="card-title">Noodles</h5>
+                                <p>$ 50</p>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem unde
+                                 eligendi officiis similique blanditiis minus asperiores at aut aliquam? Neque?</p>
                         <div class="">
                             <form action="">
                                 <div class="row">
@@ -123,5 +63,4 @@
 
 
     </div>
-    {{ $products}}
 @endsection

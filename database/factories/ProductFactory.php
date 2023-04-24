@@ -19,6 +19,7 @@ class ProductFactory extends Factory
     {
         return [
             'name'=>$this->faker->word,
+            'price'=>$this->faker->randomNumber(),
             'description'=>$this->faker->paragraph(),
             'category_id'=>Category::factory(),
             // 'image'=>$this->faker->word,
