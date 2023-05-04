@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- <meta name="csrf-token" content="{{ csrf_token() }}"> -->
     <title>QuicQFoods</title>
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
           integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
-<body>
+<body id="app">
 <main>
     <section id="topWrapper">
         <nav class="navbar navbar-expand-lg">
@@ -41,9 +42,9 @@
                         </li>
                     </ul>
                 </div>
-            </di
+            </div>
                 </div>
-               v>
+
         </nav>
         <div class="container-fluid row  ">
             <div class="col-md-6 offset-md-3 p-3 text-center" id="welcomeMsg">
@@ -55,21 +56,22 @@
             </div>
         </div>
     </section>
+    <p>@{{ name }}</p>
     @yield('content')
 
 
 
 
 
-    
+
 </main>
 <div class="container-fluid text-white bg-dark">
-    <footer > 
+    <footer >
         <div class="row py-2">
             <div class="col-lg-12">
                 <p class="text-center text-white">&copy;2023 QuicQFoods --  <span>Created by: Kpodji Emmanuel</span></p>
             </div>
-        </div>       
+        </div>
     </footer>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"

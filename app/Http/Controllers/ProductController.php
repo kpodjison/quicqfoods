@@ -14,4 +14,11 @@ class ProductController extends Controller
         // dd($products);
         return view('products.index',['products' => $products]);
     }
+
+    //function to show single product
+    public function show(Product $product,String $id){
+        $resultArray = array();
+        $resultArray = $product::find($id);
+        return $resultArray;
+    }
 }
