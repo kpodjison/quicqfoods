@@ -11,7 +11,7 @@
 </head>
 <body id="app">
 <main>
-    <section id="topWrapper">
+    <section id="loginTopWrapper">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand text-white" href="#">QuicQFoods</a>
@@ -32,31 +32,21 @@
                 <div>
                     <ul class="navbar-nav">
                         <li class="nav-item  mx-2">
-                            <a href="" class="btn btn-primary nav-link">
-                                <span class="text-white"> <i class="fa-solid fa-cart-shopping  px-2"></i>Cart</span>
-                                <span class="badge bg-danger mx-2"> 0 </span>
-                            </a>
-                        </li>
-                        <li class="nav-item  mx-2">
-                            <a href="" class="btn nav-link text-white">Login</a>
+                            @auth('webadmin')
+                                <a href="" class="btn nav-link text-white">Logout</a>
+                            @else
+                                <a href="" class="btn nav-link text-white">Login</a>
+                            @endauth
                         </li>
                     </ul>
                 </div>
             </div>
                 </div>
-
         </nav>
-        <div class="container-fluid row ">
-            <div class="col-md-6 offset-md-3 p-3 text-center" id="welcomeMsg">
-                <h2 class="text-center">QuicQFood</h2>
-                <h4 class="text-center">Welcome to the land where food chases away hunger!!</h4>
-                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem error ea necessitatibus nam atque dolore adipisci
-                    oluptates consectetur reprehenderit odit iste deserunt sunt rem ut, perferendis cum rerum voluptatum unde.</p>
-                <p><a href="#foodItems" class="btn btn-success text-white px-2"> Eat Something </a> </p>
-            </div>
-        </div>
+
+        @yield('content')
+
     </section>
-    @yield('content')
 
 
 
